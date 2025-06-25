@@ -1,0 +1,2 @@
+recursion is inherently top down 
+we can't write bottom up recursive solution

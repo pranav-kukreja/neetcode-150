@@ -14,3 +14,5 @@ Data Types: The operator== only works with unordered_map objects that have the s
 Complexity:
 Average Case: The average time complexity of comparing two unordered_maps is proportional to the number of elements (linear, or O(N)). This is because, on average, searching for a key in an unordered_map takes constant time.
 Worst Case: In the worst-case scenario, particularly with poor hash functions or many hash collisions, the time complexity can become quadratic (O(N²)). 
+
+2. 

@@ -1,0 +1,34 @@
+I. ASCII vs Unicode vs UTF-8 (Comparison)
+
+1. What it is:
+   - ASCII   : An old character set for basic English characters.
+   - Unicode : A universal system assigning codes to all characters from all languages.
+   - UTF-8   : A way to store Unicode characters using 1 to 4 bytes.
+
+2. Characters it supports:
+   - ASCII   : Only English letters, digits, and basic symbols (128 characters).
+   - Unicode : Supports characters from all languages, symbols, and emojis (over 1 million).
+   - UTF-8   : Supports all Unicode characters.
+
+3. Size per character:
+   - ASCII   : Fixed size — 1 byte per character.
+   - Unicode : Varies depending on the encoding used (UTF-8, UTF-16, etc.).
+   - UTF-8   : Uses 1 to 4 bytes depending on the character.
+
+4. Can represent emojis?
+   - ASCII   : No
+   - Unicode : Yes
+   - UTF-8   : Yes
+
+5. Can represent Hindi/Chinese?
+   - ASCII   : No
+   - Unicode : Yes
+   - UTF-8   : Yes
+
+6. Use today:
+   - ASCII   : Rarely used alone, mostly for legacy systems.
+   - Unicode : Standard reference for all text and symbols.
+   - UTF-8   : Most commonly used encoding on the internet today.
+
+
+II. Extended ASCII uses 8 bits (1 byte) and includes characters from 128 to 255, expanding the original ASCII set (0–127). I    oftware.

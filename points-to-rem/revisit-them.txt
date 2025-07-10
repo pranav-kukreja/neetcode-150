@@ -1,0 +1,16 @@
+1. 
+Q: how == works for 2 unordered hashmap in c++
+A:  
+In C++, the operator== for two std::unordered_map containers checks for deep equality, meaning it compares their contents, not just their memory addresses or whether they are the same object. 
+Here's a breakdown of how it works:
+Size comparison: The operator== first checks if both unordered_map objects have the same number of elements (key-value pairs). If their sizes are different, they are considered unequal, and the comparison stops.
+Element-wise comparison: If the sizes are the same, the operator== then iterates through the elements of one unordered_map and for each element:
+It attempts to find a key that is equivalent to the current key in the other unordered_map.
+If a matching key is found, the associated values are compared for equality.
+If the key is not found or the values associated with a matching key are not equal, the unordered_map objects are considered unequal.
+Order independence: It's important to note that the order in which elements are stored within an unordered_map (which is determined by hashing and can vary) does not affect the outcome of the operator== comparison. Two unordered_maps are considered equal if they contain the same key-value pairs, regardless of their internal storage order. 
+Key aspects
+Data Types: The operator== only works with unordered_map objects that have the same data types for their keys and values. Attempting to compare unordered_maps with different data types will result in a compilation error.
+Complexity:
+Average Case: The average time complexity of comparing two unordered_maps is proportional to the number of elements (linear, or O(N)). This is because, on average, searching for a key in an unordered_map takes constant time.
+Worst Case: In the worst-case scenario, particularly with poor hash functions or many hash collisions, the time complexity can become quadratic (O(N²)). 
